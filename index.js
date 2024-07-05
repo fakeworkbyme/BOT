@@ -28,7 +28,7 @@ function createBot() {
     username: 'Mine',
     port: 12400,
     plugins: [AutoAuth],
-    AutoAuth: 'bot112203'
+    AutoAuth: 'bot1122033'
   })
   /// DONT TOUCH ANYTHING MORE!
   bot.loadPlugin(pvp)
