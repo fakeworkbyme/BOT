@@ -19,7 +19,6 @@ setInterval(() => {
   http.get(`http://${process.env.PROJECT_DOMAIN}.repl.co/`);
 }, 224000);
 
-
 // U CAN ONLY EDIT THIS SECTION!!
 function createBot() {
   const bot = mineflayer.createBot({
