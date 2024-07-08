@@ -9,7 +9,6 @@ const AutoAuth = require('mineflayer-auto-auth');
 const app = express();
 const keep_alive = require('./keep_alive.js');
 
-
 app.use(express.json());
 
 app.get("/", (_, res) => res.sendFile(__dirname + "/index.html"));
