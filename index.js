@@ -8,6 +8,7 @@ const mc = require('minecraft-protocol');
 const AutoAuth = require('mineflayer-auto-auth');
 const app = express();
 
+
 app.use(express.json());
 
 app.get("/", (_, res) => res.sendFile(__dirname + "/index.html"));
@@ -17,12 +18,13 @@ setInterval(() => {
   http.get(`http://${process.env.PROJECT_DOMAIN}.repl.co/`);
 }, 224000);
 
+
 // U CAN ONLY EDIT THIS SECTION!!
 function createBot() {
   const bot = mineflayer.createBot({
     host: 'GHRCEM.aternos.me',
     version: false, // U can replace with 1.16.5 for example, remember to use ', = '1.16.5'
-    username: 'Mine 2.0',
+    username: 'Mine',
     port: 12400,
     plugins: [AutoAuth],
     AutoAuth: 'bot1122033'
